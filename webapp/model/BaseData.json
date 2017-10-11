@@ -1,0 +1,39 @@
+{
+	"NumberContract": [
+		{
+			"Id": "1239001",
+			"Total": 4500000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "True"},
+					  {"Product":"Mesas", "Quantity":20, "UnitPrice":6000, "Invoiced": "True"},
+			          {"Product":"Tazas", "Quantity":100, "UnitPrice":4000, "Invoiced": "True"}]
+		},
+		{
+			"Id": "1239002",
+			"Total": 2850000,
+			"Currency": "MXN",
+			"InvoiceLevel": 2,
+			"Date": "10-03-2017",
+			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "True"},
+					  {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"}]
+		},
+		{
+			"Id": "1239003",
+			"Total": 100000,
+			"Currency": "MXN",
+			"InvoiceLevel": 3,
+			"Date": "05-01-2017",
+			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"},
+					  {"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "False"}]
+		}
+	],
+	"PurchaseOrdersStats": [
+		{
+			"Total_Facturas": 15,
+			"No_Facturados": 10,
+			"Facturados": 5
+		}
+		]
+}

@@ -1,0 +1,69 @@
+<mvc:View controllerName="Compras.controller.Resumen" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+		xmlns:layout="sap.ui.layout"
+		xmlns:form="sap.ui.layout.form"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m" >
+	
+		<Page id="wizardReviewPage" Title="Resumen de Compra">
+			<content>
+				<form:SimpleForm
+						title="1. Estación Seleccionada"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Estación"/>
+						<Text id="ProductTypeChosen" text="{/Id}"/>
+						<Link press="editStepOne" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+				<form:SimpleForm
+						title="2. Product Information"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Name"/>
+						<Text id="ProductNameChosen" text="{/productName}"/>
+						<Label text="Weight"/>
+						<Text id="ProductDescriptionChosen" text="{/productDescription}"/>
+						<Link press="editStepTwo" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+				<form:SimpleForm
+						title="3. Optional Information"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Some text"/>
+						<Text text="Lorem ipsum dolor sit amet,. "/>
+						<Link press="editStepThree" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+				<form:SimpleForm
+						title="4. Precio"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Price"/>
+						<Text id="ProductPriceChosen" text="{/Total}"/>
+						<Label text="VAT Included"/>
+						<Link press="editStepFour" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+			</content>
+			<footer>
+				<Bar>
+					<contentRight>
+						<Button text="Submit" press="handleWizardSubmit"></Button>
+						<Button text="Cancel" press="handleWizardCancel"></Button>
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
+</mvc:View>

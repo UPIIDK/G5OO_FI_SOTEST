@@ -1,0 +1,67 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+			xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="Compras.controller.Compras">
+			
+					<Toolbar>
+					<!--	<ToolbarSpacer/>-->
+					<!--	<Text class="TituloPag" text="{i18n>title}"/>-->
+					<!--	<ToolbarSpacer/>-->
+					<!--	<ImageContent src="./Images/LOGOFONDOAZUL2.jpg"/>-->
+					</Toolbar>
+					
+						<Wizard id="_id_wizard" complete="onPressResumen" finishButtonText="Resumen de Compra">
+							
+							<WizardStep id="id_wizStp1" validated="true" title="Seleccionar Estación de Servicio">
+								<HBox alignItems="Center" justifyContent="Center" width="100%">
+									<SegmentedButton width="auto" select="setProductTypeFromSegmented">
+										<Button icon="sap-icon://mileage" text="E00014" press="PressButon1"/>
+										<Button icon="sap-icon://mileage" text="E00020" press="PressButon2"/>
+										<Button icon="sap-icon://mileage" text="E00030" press="PressButon3"/>
+									</SegmentedButton>
+								</HBox>
+							</WizardStep>
+							
+							<WizardStep id="id_wizStp2" validated="true" title="Seleccionar Producto" >
+								<form:SimpleForm editable="true" layout="ResponsiveGridLayout" singleContainerFullSize="False" width="auto" adjustLabelSpan="False">
+									<Label text="No. de Contrato"/>
+									<Input id="NContract" placeholder="Enter number with length greater than 6" value="{}" />
+									<Label text="Producto" required="true"/>
+									<Select>
+										<core:Item key="Magna" text="Magna"/>
+										<core:Item key="Premium" text="Premium"/>
+										<core:Item key="Diesel" text="Diesel"/>
+										<core:Item key="G-Magna" text="G-Magna"/>
+										<core:Item key="G-Super" text="G-Super"/>
+										<core:Item key="G-Diesel" text="G-Diesel"/>
+										<core:Item key="Aditivo" text="Aditivo"/>
+									</Select>
+								</form:SimpleForm>
+							</WizardStep>
+								
+								<WizardStep id="id_wizStp3" validated="true" title="Cantidad" >
+									<form:SimpleForm editable="true" layout="ResponsiveGridLayout" singleContainerFullSize="False" width="auto" adjustLabelSpan="False">
+									<Label text="Cantidad" required="true"/>
+									<Input placeholder="Cantidad en Litros"/>
+									<ComboBox selectedKey="Lt" maxWidth="100px">
+										<core:Item key="Lt" text="Lt"/>
+									</ComboBox>	
+									<Label text="Fecha de entrega" required="true"/>
+									<DatePicker id="DP1" displayFormat="short" change="handleChange" width="50%"/>
+									<Label text="Hora de entrega" required="true"/>
+									<TimePicker id="TP1" displayFormat="HH:mm" change="handleChange" width="50%"/>
+								</form:SimpleForm>
+							</WizardStep>
+							
+							<WizardStep id="id_wizStp4" title="Precio">
+								<form:SimpleForm editable="true" layout="ResponsiveGridLayout" singleContainerFullSize="False" width="auto" adjustLabelSpan="False">
+									<Label text="Precio"/>
+									<Text value="{}"/>
+								</form:SimpleForm>	
+							</WizardStep>
+						</Wizard>
+						
+						<OverflowToolbar>
+							<ToolbarSpacer/>
+							<Button text="Cancelar" press="handleWizardCancel"/>
+						</OverflowToolbar>
+
+</mvc:View>
