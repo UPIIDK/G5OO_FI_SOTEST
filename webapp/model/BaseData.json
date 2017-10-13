@@ -6,9 +6,9 @@
 			"Currency": "MXN",
 			"InvoiceLevel": 1,
 			"Date": "10-02-2017",
-			"items":[ {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "True"},
-					  {"Product":"Mesas", "Quantity":20, "UnitPrice":6000, "Invoiced": "True"},
-			          {"Product":"Tazas", "Quantity":100, "UnitPrice":4000, "Invoiced": "True"}]
+			"items":[ {"Product":"Magna", "UnitPrice":11}
+					
+]
 		},
 		{
 			"Id": "1239002",
@@ -16,8 +16,7 @@
 			"Currency": "MXN",
 			"InvoiceLevel": 2,
 			"Date": "10-03-2017",
-			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "True"},
-					  {"Product":"Sillas", "Quantity":30, "UnitPrice":3000, "Invoiced": "False"}]
+			"items":[ {"Product":"Premium",  "UnitPrice":13}]
 		},
 		{
 			"Id": "1239003",
@@ -25,11 +24,55 @@
 			"Currency": "MXN",
 			"InvoiceLevel": 3,
 			"Date": "05-01-2017",
-			"items":[ {"Product":"Laptos", "Quantity":50, "UnitPrice":500000, "Invoiced": "False"},
-					  {"Product":"Impresoras", "Quantity":20, "UnitPrice":400000, "Invoiced": "False"}]
+			"items":[
+					 {"Product":"Diesel", "UnitPrice":12}]
 		}
-	],
-	"PurchaseOrdersStats": [
+	,
+    {
+			"Id": "1239004",
+			"Total": 6400000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"G-Magna", "UnitPrice":12}
+					
+]
+		},
+        
+    {
+			"Id": "1239005",
+			"Total": 4500000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"Aditivo", "UnitPrice":6000}
+					
+]
+		},
+        
+        {
+			"Id": "1239006",
+			"Total": 6400000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"G-Super", "UnitPrice":14}
+					
+]
+		},
+        {
+			"Id": "1239007
+",
+			"Total": 6400000,
+			"Currency": "MXN",
+			"InvoiceLevel": 1,
+			"Date": "10-02-2017",
+			"items":[ {"Product":"G-Diesel", "UnitPrice":13}
+					
+]
+		}
+        ],       
+        "PurchaseOrdersStats": [
 		{
 			"Total_Facturas": 15,
 			"No_Facturados": 10,
